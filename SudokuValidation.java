@@ -58,7 +58,7 @@ public class SudokuValidation {
         
         
         for(Thread thread : threads){
-        /*Terminating the current thread temporarily till 'thread' finsihes execution */
+        /*Waiting till 'thread' finsihes execution */
             thread.join(); 
         }
         
