@@ -81,6 +81,7 @@ public class SudokuValidation {
         }
     }
     
+    
     static class RowValidator extends Validator{
         public RowValidator(int [][] board){
             super(board);
@@ -107,6 +108,8 @@ public class SudokuValidation {
         }
 
     }
+    
+    
     static class ColValidator extends Validator{
         public ColValidator(int [][] board){
             super(board);
@@ -134,6 +137,7 @@ public class SudokuValidation {
         }
 
     }
+    
     
     static class SubBoxValidator extends Validator{
         int row, col;
