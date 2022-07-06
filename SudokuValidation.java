@@ -62,7 +62,7 @@ public class SudokuValidation {
             thread.join(); 
         }
         
-        /* Now we are sure that all threads terminated. Therefore, can gather the results */
+        /* Now we are sure that all threads terminated. Therefore, we can gather the results */
         boolean result = true;
         for(Thread thread : threads){
             Validator validator = (Validator)thread; /* Validator class extends thread class */
